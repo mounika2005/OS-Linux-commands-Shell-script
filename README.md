@@ -40,26 +40,79 @@ s.n. dasgupta
 ^d
 ```
 ### Display the content of the files
-cat < file1
+# cat < file1
 ## OUTPUT
+```
+chanchal singhvi
+c.k. shukla
+s.n. dasgupta
+sumit chakrobarty
+```
 
-
-
-cat < file2
+ # cat < file2
 ## OUTPUT
-
+```
+anil aggarwal
+barun sengupta
+c.k. shukla
+lalit chowdury
+s.n.dasgupta
+```
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
+```
+ file1 file2 differ: char 1, line 1
+```
  
 comm file1 file2
  ## OUTPUT
-
- 
+ ```
+anil aggarwal
+        barun sengupta
+        c.k. shukla
+chanchal singhvi
+c.k. shukla
+        lalit chowdury
+s.n. dasgupta
+        s.n.dasgupta
+sumit chakrobarty
+chanchal singhvi
+c.k. shukla
+s.n. dasgupta
+sumit chakrobarty
+ ```
 diff file1 file2
-## OUTPUT
 
+## OUTPUT
+```
+--- file1
++++ file2
+@@ -1,9 +1,5 @@
+-chanchal singhvi
++anil aggarwal
++barun sengupta
+ c.k. shukla
+-s.n. dasgupta
+-sumit chakrobarty
+-chanchal singhvi
+-c.k. shukla
+-s.n. dasgupta
+-sumit chakrobarty
+-
++lalit chowdury
++s.n.dasgupta
+localhost:~# cat file1
+chanchal singhvi
+c.k. shukla
+s.n. dasgupta
+sumit chakrobarty
+chanchal singhvi
+c.k. shukla
+s.n. dasgupta
+sumit chakrobarty
+```
 
 #Filters
 
