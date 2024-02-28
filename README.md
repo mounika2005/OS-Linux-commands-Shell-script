@@ -146,7 +146,7 @@ cat < newfile
 Hello world
 hello world
 ^d
-~~~`
+~~~
 cat > newfile Hello world hello world
  
 grep Hello newfile 
